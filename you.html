@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极简博客 | 你</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">极简博客</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="life.html">生活</a></li>
+                <li><a href="work.html">工作</a></li>
+                <li><a href="you.html" class="active">你</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-header">
+            <div class="container">
+                <h1>你的参与</h1>
+                <p>你的反馈和建议是我们前进的动力</p>
+            </div>
+        </section>
+
+        <section class="you-section">
+            <div class="container">
+                <div class="feedback-card">
+                    <div class="feedback-icon">✉️</div>
+                    <h2 class="feedback-title">反馈渠道</h2>
+                    <p class="feedback-description">我们重视你的每一条建议和想法。以下是几种联系我们的方式：</p>
+                    
+                    <div class="feedback-channels">
+                        <div class="channel-item">
+                            <div class="channel-icon">📧</div>
+                            <div class="channel-details">
+                                <h3>电子邮件</h3>
+                                <p>发送邮件至 <a href="mailto:feedback@jijian.com">feedback@jijian.com</a></p>
+                                <p class="channel-note">我们将在2个工作日内回复你的邮件</p>
+                            </div>
+                        </div>
+                        
+                        <div class="channel-item">
+                            <div class="channel-icon">💬</div>
+                            <div class="channel-details">
+                                <h3>在线表单</h3>
+                                <p>填写下方的反馈表单</p>
+                                <p class="channel-note">快速简便的方式告诉我们你的想法</p>
+                            </div>
+                        </div>
+                        
+                        <div class="channel-item">
+                            <div class="channel-icon">📱</div>
+                            <div class="channel-details">
+                                <h3>社交媒体</h3>
+                                <p>关注我们的社交媒体账号并发送私信</p>
+                                <p class="channel-note">微博、知乎、GitHub或抖音，选择你习惯的平台</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 反馈表单 -->
+                    <div class="feedback-form-wrapper">
+                        <h3>分享你的反馈</h3>
+                        <form class="comment-form">
+                            <div class="form-group">
+                                <label for="feedback-name">你的名字</label>
+                                <input type="text" id="feedback-name" placeholder="填写你的名字或昵称" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="feedback-email">电子邮箱</label>
+                                <input type="email" id="feedback-email" placeholder="用于接收回复通知" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="feedback-type">反馈类型</label>
+                                <select id="feedback-type" required>
+                                    <option value="">请选择类型</option>
+                                    <option value="suggestion">功能建议</option>
+                                    <option value="bug">问题报告</option>
+                                    <option value="content">内容建议</option>
+                                    <option value="other">其他</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="feedback-content">反馈内容</label>
+                                <textarea id="feedback-content" rows="6" placeholder="请详细描述你的反馈或建议..." required></textarea>
+                            </div>
+                            <div class="form-submit">
+                                <button type="submit" class="btn">提交反馈</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="thank-you-section">
+                    <h2 class="section-title">感谢你的支持</h2>
+                    <div class="thank-you-content">
+                        <p>极简博客的成长离不开每一位访问者和贡献者的支持。我们努力打造一个简约、实用且富有启发性的内容平台，希望能为你的生活和工作带来一些价值和思考。</p>
+                        <p>每一条反馈、每一次分享，都是对我们最大的鼓励。感谢你成为这个小社区的一部分，让我们一起在分享与交流中共同成长。</p>
+                        <p>如果你喜欢这个网站，也欢迎将它分享给更多可能感兴趣的朋友。</p>
+                        
+                        <div class="share-section">
+                            <h3>分享这个网站</h3>
+                            <div class="share-buttons">
+                                <a href="#" class="share-button weibo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M20.194 14.197c0 3.362-4.53 6.088-10.118 6.088c-5.587 0-10.118-2.726-10.118-6.088c0-3.361 4.531-6.087 10.118-6.087c5.588 0 10.118 2.726 10.118 6.087z"></path></svg>
+                                    微博
+                                </a>
+                                <a href="#" class="share-button wechat">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213c0 .163.13.295.29.295a.32.32 0 0 0 .193-.066l2.378-1.397a.554.554 0 0 1 .21-.063c.047 0 .093.01.136.023c.893.216 1.819.335 2.796.335c.144 0 .29-.006.433-.013a5.327 5.327 0 0 1-.19-1.402c0-3.860 3.86-7.004 8.567-7.004c.207 0 .411.013.615.025c-.797-3.147-4.141-5.533-8.412-5.533m15.04 13.757c1.518-1.152 2.444-2.7 2.444-4.391c0-3.24-3.331-5.918-7.412-5.918c-4.08 0-7.415 2.677-7.415 5.918c0 3.242 3.334 5.918 7.415 5.918c.857 0 1.694-.093 2.473-.266c.035-.01.068-.013.1-.013c.055 0 .108.014.158.038l1.866.933a.267.267 0 0 0 .12.03c.09 0 .169-.047.213-.127a.176.176 0 0 0 .023-.085c0-.038-.02-.08-.038-.118l-.237-.902a.506.506 0 0 1 .117-.487m-8.921-3.236a.784.784 0 0 1-.793-.777c0-.43.355-.778.794-.778c.44 0 .795.348.795.778a.784.784 0 0 1-.795.777m4.573 0a.784.784 0 0 1-.795-.777c0-.43.357-.778.795-.778c.439 0 .794.348.794.778a.784.784 0 0 1-.794.777M6.49 8.498a.784.784 0 0 1-.793-.778c0-.43.355-.778.794-.778s.794.348.794.778a.784.784 0 0 1-.793.778m4.145 0a.784.784 0 0 1-.793-.778c0-.43.355-.778.793-.778c.439 0 .794.348.794.778a.784.784 0 0 1-.794.778"></path></svg>
+                                    微信
+                                </a>
+                                <a href="#" class="share-button copy">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M21 8V20.993C21 21.55 20.55 22 19.993 22H8c-.556 0-1-.45-1-1.007V18h11V8h3zm-4-2V16.993c0 .557-.45 1.007-1.007 1.007H4.007A1 1 0 0 1 3 16.993V4.007C3 3.45 3.45 3 4.007 3h11.986C16.55 3 17 3.45 17 4.007z"></path></svg>
+                                    复制链接
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <h2>加入我们的社区</h2>
+                <p>订阅更新，获取最新内容和动态</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="您的电子邮箱" required>
+                    <button type="submit" class="btn">订阅</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-primary">
+                    <div class="footer-logo">极简博客</div>
+                    <p class="footer-description">探索思想的无限可能，分享创意、知识与见解的个人空间。</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="微博">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M20.194 14.197c0 3.362-4.53 6.088-10.118 6.088c-5.587 0-10.118-2.726-10.118-6.088c0-3.361 4.531-6.087 10.118-6.087c5.588 0 10.118 2.726 10.118 6.087z"></path></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="知乎">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M5.721 0C2.251 0 0 2.25 0 5.719V18.28C0 21.751 2.252 24 5.721 24h12.56C21.751 24 24 21.75 24 18.281V5.72C24 2.249 21.75 0 18.281 0zm1.5 4.375l8.563.844c.25.031.781.125.781 1l-.031 2.375c0 .094-.125.531-.508.531h-7.75c-.125 0-.188.094-.188.157v.843c0 .094.063.157.188.157h6.438c.469 0 .719 1.25.75 1.594c.031.219.031.344.031.406c0 .469-.219 2.906-.656 3.688c-.094.25-.25.312-.438.312h-6.719c-.75.031-.156.062-.156.156v4.438c0 .094.031.125.156.125h8.344c.094 0 .188-.31.188-.125v-.875c0-.062-.094-.125-.188-.125h-1.25c.344-.5.531-1.094.563-1.75h1.687c.094 0 .125-.94.125-.188v-.75c0-.062-.031-.156-.125-.156h-1.75c0-.781-.25-1.407-.594-1.938h1.344c.094 0 .188-.62.188-.156v-.781c0-.125-.094-.156-.188-.156h-7.5c-.094 0-.156.031-.156.156v.781c0 .094.063.156.156.156h1.75c-.531.531-.75 1.156-.781 1.938h-1.781c-.125 0-.188.094-.188.156v.75c0 .094.063.188.188.188h1.594c-.032.656-.282 1.25-.626 1.75H9.501c-.094 0-.156.063-.156.125v.875c0 .094.063.125.156.125c-.25 0 1.688.031 2.063 0c-.344.562-.875.719-1.25.75c-.625.032-1.25-.187-1.563-.593a.36.36 0 0 0-.281-.126c-.344 0-.656.22-.656.532c0 .343.375.78.781 1.093c.438.376 1.625.688 2.563.625c1.25-.062 2.625-.593 3.25-2.281h.437c.438 0 .688-.187.75-.187c.219 0 2.094 1.875 3.344 1.875c.156 0 .375-.03.375-.187c0-.094-.031-.157-.031-.219c-.094-.25-1.344-1.844-2.906-2.344c-.25-.156-.313-.25-.219-.406c.438-.657.688-1.407.688-1.407s.156-.25.188-.312c.406-.5.75-1.844.75-2.78c0-.807-.157-1.407-.157-1.407s0-.125-.031-.188c-.031-.062-.469-.843-.469-.843s-.344-.97-1.25-.876h-3.531c-.031 0-.094-.031-.094-.125v-.656c0-.063.063-.125.094-.125h4c.094 0 .125-.063.125-.157v-.812c0-.094-.031-.157-.125-.157h-4c-.031 0-.094-.062-.094-.125v-.719c0-.062.063-.094.094-.125h4.188c.094 0 .188-.094.188-.156v-.688c0-.062-.094-.156-.188-.156zM7.345 8.25c.313 0 .438.219.563.438c.094.218.094.468.094.75c0 .53-.032.874-.157 1.124c-.31.157-.125.188-.187.188h-.688c-.125 0-.25-.094-.25-.25V8.5c0-.125.125-.25.25-.25zm7.437 0c.125 0 .25.125.25.25v2c0 .156-.125.25-.25.25h-.718c-.063 0-.157-.031-.188-.188c-.125-.25-.157-.593-.157-1.124c0-.282 0-.532.094-.75c.126-.219.25-.438.563-.438z"></path></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="抖音">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.59-1.16-2.59-2.5c0-1.4 1.16-2.5 2.59-2.5c.18 0 .36.02.53.06v-3.1a5.69 5.69 0 0 0-3.12.92a5.342 5.342 0 0 0-2.31 4.62c0 2.97 2.4 5.37 5.41 5.37c2.98 0 5.4-2.41 5.4-5.38V9.14a8.03 8.03 0 0 0 4.86 1.63v-3.06c-.9.01-1.75-.18-2.54-.52c-.71-.32-1.39-.7-2-1.16c-.6-.46-1.15-.97-1.65-1.53c-.2-.23.61.83.61.83z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-wrapper">
+                    <div class="footer-column">
+                        <h4>探索</h4>
+                        <ul>
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="life.html">生活</a></li>
+                            <li><a href="work.html">工作</a></li>
+                            <li><a href="you.html">你</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>生活板块</h4>
+                        <ul>
+                            <li><a href="life.html#movies">电影推荐</a></li>
+                            <li><a href="life.html#travel">旅行计划</a></li>
+                            <li><a href="life.html#tools">工具推荐</a></li>
+                            <li><a href="life.html#hobby">三分钟热度</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>工作板块</h4>
+                        <ul>
+                            <li><a href="work.html#tech">技术分享</a></li>
+                            <li><a href="work.html#comments">留言讨论</a></li>
+                            <li><a href="work.html#resources">学习资源</a></li>
+                            <li><a href="work.html#projects">项目展示</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 极简博客. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 分享选项卡切换
+            const optionBtns = document.querySelectorAll('.option-btn');
+            const inputWrappers = document.querySelectorAll('.share-input-wrapper');
+            
+            optionBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // 移除所有激活状态
+                    optionBtns.forEach(b => b.classList.remove('active'));
+                    inputWrappers.forEach(w => w.classList.remove('active'));
+                    
+                    // 激活当前选项和对应的表单
+                    this.classList.add('active');
+                    const target = this.getAttribute('data-target');
+                    document.getElementById(`${target}-input`).classList.add('active');
+                });
+            });
+            
+            // 表单提交处理
+            const forms = document.querySelectorAll('.comment-form');
+            forms.forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // 表单验证
+                    let isValid = true;
+                    const requiredInputs = form.querySelectorAll('input[required], textarea[required], select[required]');
+                    
+                    requiredInputs.forEach(input => {
+                        if (!input.value.trim()) {
+                            isValid = false;
+                            input.classList.add('error');
+                            
+                            // 添加错误提示
+                            let errorMsg = input.nextElementSibling;
+                            if (!errorMsg || !errorMsg.classList.contains('error-message')) {
+                                errorMsg = document.createElement('div');
+                                errorMsg.className = 'error-message';
+                                errorMsg.style.color = '#ff3b30';
+                                errorMsg.style.fontSize = '1.4rem';
+                                errorMsg.style.marginTop = '0.5rem';
+                                errorMsg.innerText = '此字段不能为空';
+                                input.parentNode.insertBefore(errorMsg, input.nextSibling);
+                            }
+                        } else {
+                            input.classList.remove('error');
+                            const errorMsg = input.nextElementSibling;
+                            if (errorMsg && errorMsg.classList.contains('error-message')) {
+                                errorMsg.remove();
+                            }
+                        }
+                    });
+                    
+                    // 如果表单验证不通过，停止提交
+                    if (!isValid) {
+                        return;
+                    }
+                    
+                    // 显示成功消息
+                    const successMessage = document.createElement('div');
+                    successMessage.style.padding = '1.6rem';
+                    successMessage.style.backgroundColor = '#f0f9ff';
+                    successMessage.style.color = '#0071e3';
+                    successMessage.style.borderRadius = '0.8rem';
+                    successMessage.style.margin = '2rem 0';
+                    successMessage.style.textAlign = 'center';
+                    successMessage.innerText = '感谢您的分享！内容审核后将会显示在社区页面。';
+                    
+                    // 检查是否已有成功消息
+                    const existingMessage = form.querySelector('[style*="background-color: #f0f9ff"]');
+                    if (existingMessage) {
+                        existingMessage.remove();
+                    }
+                    
+                    form.appendChild(successMessage);
+                    
+                    // 滚动到成功消息
+                    successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    
+                    // 重置表单
+                    form.reset();
+                    
+                    // 5秒后移除成功消息
+                    setTimeout(() => {
+                        successMessage.style.opacity = '0';
+                        successMessage.style.transform = 'translateY(-10px)';
+                        successMessage.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                        
+                        // 完全移除元素
+                        setTimeout(() => {
+                            successMessage.remove();
+                        }, 500);
+                    }, 5000);
+                });
+                
+                // 实时表单验证 - 输入时移除错误状态
+                form.querySelectorAll('input, textarea, select').forEach(input => {
+                    input.addEventListener('input', function() {
+                        if (this.value.trim()) {
+                            this.classList.remove('error');
+                            const errorMsg = this.nextElementSibling;
+                            if (errorMsg && errorMsg.classList.contains('error-message')) {
+                                errorMsg.remove();
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

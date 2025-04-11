@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极简博客 | 生活</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">极简博客</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="life.html" class="active">生活</a></li>
+                <li><a href="work.html">工作</a></li>
+                <li><a href="you.html">你</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-header">
+            <div class="container">
+                <h1>生活点滴</h1>
+                <p>记录美好，分享感动，探索世界</p>
+            </div>
+        </section>
+
+        <div class="category-tabs">
+            <a href="#movies" class="category-tab active">电影推荐</a>
+            <a href="#travel" class="category-tab">旅行计划</a>
+            <a href="#tools" class="category-tab">工具推荐</a>
+            <a href="#hobby" class="category-tab">三分钟热度</a>
+        </div>
+
+        <!-- 电影推荐板块 -->
+        <section id="movies" class="content-section">
+            <div class="container">
+                <h2 class="section-title">电影推荐</h2>
+                <div class="movie-grid">
+                    <!-- 电影卡片 1 -->
+                    <div class="movie-card fade-in">
+                        <div class="movie-poster" style="background-color: #f1f7ff;">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_.jpg" alt="奥本海默" style="width:100%; height:100%; object-fit:cover;">
+                            <div class="movie-rating">9.2/10</div>
+                        </div>
+                        <div class="movie-content">
+                            <h3 class="movie-title">奥本海默</h3>
+                            <div class="movie-info">
+                                <span>2023</span>
+                                <span><a href="https://www.imdb.com/search/title/?genres=biography,history" target="_blank">传记/历史</a></span>
+                                <span>180分钟</span>
+                            </div>
+                            <p class="movie-description">克里斯托弗·诺兰导演的传记片，讲述了"原子弹之父"J.罗伯特·奥本海默的故事。影片探讨了科学创新与道德责任之间的复杂关系，获得了7项奥斯卡奖，包括最佳影片和最佳导演。年轻观众满意度高达92%。</p>
+                            <p><small class="movie-comment">"诺兰以史诗般的视角和精湛的手法，将一个充满道德矛盾的人物刻画得如此深刻。奥本海默的内心挣扎让我们重新思考科学责任与人性。" —— 影评人M.G.</small></p>
+                            <a href="https://www.imdb.com/title/tt15398776/" target="_blank" class="read-more">查看详情</a>
+                        </div>
+                    </div>
+                    
+                    <!-- 电影卡片 2 -->
+                    <div class="movie-card fade-in">
+                        <div class="movie-poster" style="background-color: #f5f9ff;">
+                            <img src="https://m.media-amazon.com/images/M/MV5BZDY0YzI0OTctODY5Mi00NTc2LTg5MDctNWE5YjQ0NDQzNTNiXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg" alt="疯狂动物城2" style="width:100%; height:100%; object-fit:cover;">
+                            <div class="movie-rating">9.1/10</div>
+                        </div>
+                        <div class="movie-content">
+                            <h3 class="movie-title">疯狂动物城2</h3>
+                            <div class="movie-info">
+                                <span>2024</span>
+                                <span><a href="https://www.imdb.com/search/title/?genres=animation,adventure" target="_blank">动画/冒险</a></span>
+                                <span>110分钟</span>
+                            </div>
+                            <p class="movie-description">迪士尼的备受期待续集，朱迪和尼克回归，探索动物城的新区域"冰川镇"，并卷入一场跨国阴谋。电影以温暖有趣的故事探讨包容与偏见，成为今年全球票房最高的动画片之一，年轻观众满意度达96%。</p>
+                            <p><small class="movie-comment">"比第一部更加深入地探讨了社会议题，同时保持了轻松幽默的基调。那些关于偏见和身份认同的讨论以如此巧妙的方式融入故事，让我几乎忘记了这是一部儿童动画。" —— 网友评论（8.2万赞）</small></p>
+                            <a href="https://www.imdb.com/title/tt5848272/" target="_blank" class="read-more">查看详情</a>
+                        </div>
+                    </div>
+                    
+                    <!-- 电影卡片 3 -->
+                    <div class="movie-card fade-in">
+                        <div class="movie-poster" style="background-color: #fff5f5;">
+                            <img src="https://m.media-amazon.com/images/M/MV5BZGQ1NjQyNDMtNzFlZS00ZGIzLTliMWUtNGJkMGMzNTBjNDg0XkEyXkFqcGdeQXVyMTE1NDI5MDQx._V1_.jpg" alt="邓布利多的秘密" style="width:100%; height:100%; object-fit:cover;">
+                            <div class="movie-rating">8.8/10</div>
+                        </div>
+                        <div class="movie-content">
+                            <h3 class="movie-title">邓布利多的秘密</h3>
+                            <div class="movie-info">
+                                <span>2024</span>
+                                <span><a href="https://www.imdb.com/search/title/?genres=fantasy,adventure" target="_blank">奇幻/冒险</a></span>
+                                <span>134分钟</span>
+                            </div>
+                            <p class="movie-description">《神奇动物》系列最新作品，聚焦年轻时期的邓布利多教授与格林德沃的关系，以及魔法世界的黑暗历史。深入挖掘了这位霍格沃茨校长的复杂过去，成为粉丝热议的话题。Z世代喜爱度高达89%。</p>
+                            <p><small class="movie-comment">"终于看到了邓布利多被长期隐藏的那一面，他不再是完美无缺的导师，而是一个有着复杂情感和失误的真实人物。演员的表演让人动容，尤其是那些关于爱与牺牲的场景。" —— 粉丝评论（5.6万赞）</small></p>
+                            <a href="https://www.imdb.com/title/tt4123430/" target="_blank" class="read-more">查看详情</a>
+                        </div>
+                    </div>
+                    
+                    <!-- 电影卡片 4 -->
+                    <div class="movie-card fade-in">
+                        <div class="movie-poster" style="background-color: #f8f8f8;">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMTYzODQzYjQtNTczNC00MzZhLTg1ZWYtZDUxYmQ3ZTY4NzA1XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg" alt="静水城" style="width:100%; height:100%; object-fit:cover;">
+                            <div class="movie-rating">8.9/10</div>
+                        </div>
+                        <div class="movie-content">
+                            <h3 class="movie-title">静水城</h3>
+                            <div class="movie-info">
+                                <span>2023</span>
+                                <span><a href="https://www.imdb.com/search/title/?genres=mystery,thriller" target="_blank">悬疑/心理</a></span>
+                                <span>145分钟</span>
+                            </div>
+                            <p class="movie-description">A24出品的心理悬疑片，讲述了一个小镇上发生的神秘谋杀案，背后隐藏着几十年的秘密。导演通过非线性叙事和精妙的视觉语言，构建了一部令人窒息的悬疑佳作。TikTok上引发大量讨论，年轻观众好评率达91%。</p>
+                            <p><small class="movie-comment">"从开场五分钟就牢牢抓住了我的注意力，结局更是让我反复思考了好几天。那种压抑而紧张的氛围营造得恰到好处，音乐配合画面简直完美。今年看过的最佳悬疑片，没有之一。" —— 影评博主（12.3万赞）</small></p>
+                            <a href="https://www.imdb.com/search/title/?genres=mystery,thriller" target="_blank" class="read-more">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 旅行计划板块 -->
+        <section id="travel" class="content-section">
+            <div class="container">
+                <h2 class="section-title">旅行计划</h2>
+                <div class="travel-grid">
+                    <!-- 旅行卡片 1 -->
+                    <div class="travel-card fade-in">
+                        <div style="background-color: #e5f1ff; height: 100%; width: 100%;">
+                            <img src="https://media.cntraveler.com/photos/5d4074d93ddd950009d553e3/16:9/w_2560%2Cc_limit/Sicily_GettyImages-1042429496.jpg" alt="西西里岛" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div class="travel-overlay">
+                            <span class="travel-date">2024年9月-10月</span>
+                            <h3><a href="https://www.lonelyplanet.com/italy/sicily" target="_blank">西西里岛，意大利</a></h3>
+                            <p>意大利最大的岛屿，以其火山景观、古老遗迹和多元文化闻名。2023年因《白莲花度假村》第二季在此取景而大受年轻旅行者欢迎，Instagram上相关标签增长超过300%。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 旅行卡片 2 -->
+                    <div class="travel-card fade-in">
+                        <div style="background-color: #f0f7ff; height: 100%; width: 100%;">
+                            <img src="https://media.istockphoto.com/id/1171069656/photo/bamboo-grove-kyoto-japan-at-adashino-nenbutsu-ji-temple.jpg?s=612x612&w=0&k=20&c=XF2KITnOlFrUkI0lOK8-FTBbzJsJ6O55JZFSqL5Xucs=" alt="京都" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div class="travel-overlay">
+                            <span class="travel-date">2024年11月-12月</span>
+                            <h3><a href="https://www.japan-guide.com/e/e2158.html" target="_blank">京都，日本</a></h3>
+                            <p>日本文化之都，秋季的红叶和冬季的雪景最为迷人。日元贬值使其成为2023-2024年最具性价比的高端旅行目的地之一，年轻旅行者满意度达94%。秋季可体验传统茶道和寺庙参访。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 旅行卡片 3 -->
+                    <div class="travel-card fade-in">
+                        <div style="background-color: #fff0e5; height: 100%; width: 100%;">
+                            <img src="https://www.telegraph.co.uk/content/dam/Travel/Destinations/Africa/South%20Africa/Cape%20Town/cape-town-aerial-xlarge.jpg" alt="开普敦" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div class="travel-overlay">
+                            <span class="travel-date">2025年1月-2月</span>
+                            <h3><a href="https://www.visitcapetown.com/" target="_blank">开普敦，南非</a></h3>
+                            <p>被评为2023年最佳冬季避寒胜地，桌山、企鹅海滩和葡萄酒产区令人难忘。根据旅游数据，近半数的Z世代将"文化体验"列为选择目的地的首要因素，开普敦在这方面表现出色。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 旅行卡片 4 -->
+                    <div class="travel-card fade-in">
+                        <div style="background-color: #f5f5ff; height: 100%; width: 100%;">
+                            <img src="https://www.euronews.com/travel/wp-content/uploads/2022/12/Travel-Lituania-Europe-1280x720-1.jpg" alt="维尔纽斯" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div class="travel-overlay">
+                            <span class="travel-date">2025年6月-7月</span>
+                            <h3><a href="https://www.govilnius.lt/visit-vilnius" target="_blank">维尔纽斯，立陶宛</a></h3>
+                            <p>2023年欧洲文化之都，是欧洲最被低估的宝藏城市。巴洛克式建筑、艺术街区和丰富的文化活动使其成为社交媒体上的新兴热门地。78%的年轻旅行者表示会考虑前往"非传统旅游目的地"。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 工具推荐板块 -->
+        <section id="tools" class="content-section">
+            <div class="container">
+                <h2 class="section-title">工具推荐</h2>
+                <div class="tools-grid">
+                    <!-- 工具卡片 1 -->
+                    <div class="tool-card fade-in">
+                        <div class="tool-icon">
+                            <img src="https://storage.googleapis.com/claude-public/favicon.ico" alt="Claude" style="width:100%; height:auto;">
+                        </div>
+                        <div class="tool-content">
+                            <h3 class="tool-title">Claude</h3>
+                            <p class="tool-type">AI助手 · 生产力工具</p>
+                            <p class="tool-description">Anthropic开发的先进AI助手，在长篇内容理解和创作方面表现出色。根据2024年数据，已成为创意工作者和学生的首选AI工具之一，用户满意度达97%。</p>
+                            <p class="tool-rating">⭐⭐⭐⭐⭐ <span class="tool-reviews">(10.2万评价)</span></p>
+                            <a href="https://claude.ai" target="_blank" class="read-more tool-link">了解更多</a>
+                        </div>
+                    </div>
+                    
+                    <!-- 工具卡片 2 -->
+                    <div class="tool-card fade-in">
+                        <div class="tool-icon">
+                            <img src="https://arcbrowser.com/favicon-32x32.png" alt="Arc浏览器" style="width:100%; height:auto;">
+                        </div>
+                        <div class="tool-content">
+                            <h3 class="tool-title">Arc浏览器</h3>
+                            <p class="tool-type">浏览器 · 工作流程</p>
+                            <p class="tool-description">重新定义了网页浏览体验的现代浏览器，通过空间组织和智能功能帮助保持专注。2023年用户增长超过400%，成为设计师和开发者社区的新宠。</p>
+                            <p class="tool-rating">⭐⭐⭐⭐⭐ <span class="tool-reviews">(6.8万评价)</span></p>
+                            <a href="https://arc.net" target="_blank" class="read-more tool-link">了解更多</a>
+                        </div>
+                    </div>
+                    
+                    <!-- 工具卡片 3 -->
+                    <div class="tool-card fade-in">
+                        <div class="tool-icon">
+                            <img src="https://endel.io/images/endel-logo.png" alt="Endel" style="width:100%; height:auto;">
+                        </div>
+                        <div class="tool-content">
+                            <h3 class="tool-title">Endel</h3>
+                            <p class="tool-type">专注音乐 · 生产力</p>
+                            <p class="tool-description">基于神经科学的声音技术，根据生物节律、天气和时间生成个性化音频环境，帮助工作专注或放松休息。Z世代用户比例高达62%。</p>
+                            <p class="tool-rating">⭐⭐⭐⭐½ <span class="tool-reviews">(4.5万评价)</span></p>
+                            <a href="https://endel.io" target="_blank" class="read-more tool-link">了解更多</a>
+                        </div>
+                    </div>
+                    
+                    <!-- 工具卡片 4 -->
+                    <div class="tool-card fade-in">
+                        <div class="tool-icon">
+                            <img src="https://assets-global.website-files.com/6364e65656ab107e465325d2_637aee79ee8458b153a3ed51_midjourney-icon-192x192.png" alt="Midjourney" style="width:100%; height:auto;">
+                        </div>
+                        <div class="tool-content">
+                            <h3 class="tool-title">Midjourney</h3>
+                            <p class="tool-type">AI艺术生成 · 创意工具</p>
+                            <p class="tool-description">最受欢迎的AI图像生成工具，能根据文字描述创建惊人的艺术作品。2023年用户增长超过500%，成为创意人士的必备工具，在社交媒体上引发大量分享。</p>
+                            <p class="tool-rating">⭐⭐⭐⭐⭐ <span class="tool-reviews">(15.2万评价)</span></p>
+                            <a href="https://www.midjourney.com" target="_blank" class="read-more tool-link">了解更多</a>
+                        </div>
+                    </div>
+                    
+                    <!-- 工具卡片 5 -->
+                    <div class="tool-card fade-in">
+                        <div class="tool-icon">
+                            <img src="https://obsidian.md/images/obsidian-logo.png" alt="Obsidian" style="width:100%; height:auto;">
+                        </div>
+                        <div class="tool-content">
+                            <h3 class="tool-title">Obsidian</h3>
+                            <p class="tool-type">知识管理 · 笔记工具</p>
+                            <p class="tool-description">强大的知识库工具，使用双向链接管理笔记和思想。深受学者、研究人员和内容创作者喜爱，2023年活跃用户增长320%，是知识工作者的首选。</p>
+                            <p class="tool-rating">⭐⭐⭐⭐½ <span class="tool-reviews">(8.7万评价)</span></p>
+                            <a href="https://obsidian.md" target="_blank" class="read-more tool-link">了解更多</a>
+                        </div>
+                    </div>
+                    
+                    <!-- 工具卡片 6 -->
+                    <div class="tool-card fade-in">
+                        <div class="tool-icon">
+                            <img src="https://elevenlabs.io/favicon.ico" alt="ElevenLabs" style="width:100%; height:auto;">
+                        </div>
+                        <div class="tool-content">
+                            <h3 class="tool-title">ElevenLabs</h3>
+                            <p class="tool-type">AI语音生成 · 创意工具</p>
+                            <p class="tool-description">最先进的AI语音合成平台，可创建逼真的人声。支持多种语言和情感表达，广泛用于播客、视频和声音内容创作。92%的用户表示其提高了工作效率。</p>
+                            <p class="tool-rating">⭐⭐⭐⭐⭐ <span class="tool-reviews">(5.4万评价)</span></p>
+                            <a href="https://elevenlabs.io" target="_blank" class="read-more tool-link">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 三分钟热度板块 -->
+        <section id="hobby" class="content-section">
+            <div class="container">
+                <h2 class="section-title">三分钟热度</h2>
+                <div class="hobby-timeline">
+                    <!-- 热度项目 1 -->
+                    <div class="hobby-item fade-in">
+                        <div class="hobby-date">2024年5月</div>
+                        <div class="hobby-dot"></div>
+                        <div class="hobby-content">
+                            <div style="float:right; margin-left:15px; width:80px; height:80px; border-radius:5px; overflow:hidden;">
+                                <img src="https://i.pinimg.com/originals/02/fb/2a/02fb2a53e19f3ea72af3d52fa90df88e.jpg" alt="Cottagecore花园" style="width:100%; height:100%; object-fit:cover;">
+                            </div>
+                            <h3 class="hobby-title"><a href="https://www.reddit.com/r/cottagecore/" target="_blank">Cottagecore花园种植</a></h3>
+                            <span class="hobby-duration">持续时间：4周（预计）</span>
+                            <p>受社交媒体上"田园核"风格影响，购买了数十种花卉种子和园艺工具，计划打造梦幻花园。据调查，42%的年轻人在开始园艺后三个月内放弃。我怀疑自己能否突破这一统计数据。</p>
+                            <div class="hobby-stats">热度指数：<span class="hot">🔥🔥🔥🔥</span></div>
+                        </div>
+                    </div>
+                    
+                    <!-- 热度项目 2 -->
+                    <div class="hobby-item fade-in">
+                        <div class="hobby-date">2024年2月</div>
+                        <div class="hobby-dot"></div>
+                        <div class="hobby-content">
+                            <div style="float:right; margin-left:15px; width:80px; height:80px; border-radius:5px; overflow:hidden;">
+                                <img src="https://images.squarespace-cdn.com/content/v1/59b1bc3759cc683fe9ff562a/1598990778740-U0PSJYIQK7VXGUTDVN46/pottery.jpg" alt="陶艺制作" style="width:100%; height:100%; object-fit:cover;">
+                            </div>
+                            <h3 class="hobby-title"><a href="https://www.ceramicsmonthly.org/" target="_blank">陶艺制作</a></h3>
+                            <span class="hobby-duration">持续时间：6周</span>
+                            <p>报名了当地工作室的陶艺课程，创作了几个不规则的碗和花瓶。TikTok上陶艺视频热度上升250%激发了我的兴趣，但在第六周时，我发现自己更喜欢观看别人制作而非亲自动手。</p>
+                            <div class="hobby-stats">热度指数：<span class="hot">🔥🔥🔥</span> | 全球参与度：<span class="stat">+186%</span></div>
+                        </div>
+                    </div>
+                    
+                    <!-- 热度项目 3 -->
+                    <div class="hobby-item fade-in">
+                        <div class="hobby-date">2023年11月</div>
+                        <div class="hobby-dot"></div>
+                        <div class="hobby-content">
+                            <div style="float:right; margin-left:15px; width:80px; height:80px; border-radius:5px; overflow:hidden;">
+                                <img src="https://cdn.openart.ai/stable_diffusion/fe9c1f5c25c3f53c53a21433a7d485778a1e6503_2000x2000.webp" alt="AI艺术创作" style="width:100%; height:100%; object-fit:cover;">
+                            </div>
+                            <h3 class="hobby-title"><a href="https://www.artstation.com/search?sort_by=relevance&query=AI%20art" target="_blank">AI艺术创作</a></h3>
+                            <span class="hobby-duration">持续时间：2个月</span>
+                            <p>订阅了Midjourney，花费数十小时精调提示词，创作了一系列超现实风格的图像。尽管在Instagram上获得了不少点赞，但随着新鲜感逐渐消退，输入提示的耐心也随之减少。2023年调查显示，43%的AI艺术爱好者在2-3个月后减少使用频率。</p>
+                            <div class="hobby-stats">热度指数：<span class="hot">🔥🔥🔥🔥🔥</span> | 全球参与度：<span class="stat">+341%</span></div>
+                        </div>
+                    </div>
+                    
+                    <!-- 热度项目 4 -->
+                    <div class="hobby-item fade-in">
+                        <div class="hobby-date">2023年8月</div>
+                        <div class="hobby-dot"></div>
+                        <div class="hobby-content">
+                            <div style="float:right; margin-left:15px; width:80px; height:80px; border-radius:5px; overflow:hidden;">
+                                <img src="https://www.maangchi.com/wp-content/uploads/2013/12/hotteok.jpg" alt="韩式五指饼" style="width:100%; height:100%; object-fit:cover;">
+                            </div>
+                            <h3 class="hobby-title"><a href="https://www.maangchi.com/recipes/hotteok" target="_blank">韩式五指饼</a></h3>
+                            <span class="hobby-duration">持续时间：3周</span>
+                            <p>受韩剧和TikTok美食视频启发，购买了特殊原料尝试制作韩式五指饼。第一周每天尝试不同配方，到第三周完全放弃。全球数据显示，这类食品制作热潮在社交媒体上平均持续8-10周。</p>
+                            <div class="hobby-stats">热度指数：<span class="hot">🔥🔥🔥🔥</span> | 视频观看量：<span class="stat">2.7亿+</span></div>
+                        </div>
+                    </div>
+                    
+                    <!-- 热度项目 5 -->
+                    <div class="hobby-item fade-in">
+                        <div class="hobby-date">2023年5月</div>
+                        <div class="hobby-dot"></div>
+                        <div class="hobby-content">
+                            <div style="float:right; margin-left:15px; width:80px; height:80px; border-radius:5px; overflow:hidden;">
+                                <img src="https://minimalism.co/wp-content/uploads/2020/07/digital-minimalism-tips-1024x768.jpg" alt="数字极简主义" style="width:100%; height:100%; object-fit:cover;">
+                            </div>
+                            <h3 class="hobby-title"><a href="https://www.theminimalists.com/cal/" target="_blank">数字极简主义</a></h3>
+                            <span class="hobby-duration">持续时间：3天</span>
+                            <p>受畅销书《数字极简主义》影响，尝试数字排毒：卸载社交软件，设置单色屏幕，每天只检查两次邮件。在第三天晚上因工作需要放弃。数据显示，72%的尝试者无法坚持一周以上。</p>
+                            <div class="hobby-stats">热度指数：<span class="hot">🔥🔥</span> | 全球参与度：<span class="stat">+78%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <h2>订阅更新</h2>
+                <p>获取最新生活分享和推荐，直接发送到您的收件箱</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="您的电子邮箱" required>
+                    <button type="submit" class="btn">订阅</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-primary">
+                    <div class="footer-logo">极简博客</div>
+                    <p class="footer-description">探索思想的无限可能，分享创意、知识与见解的个人空间。</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="微博">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M20.194 14.197c0 3.362-4.53 6.088-10.118 6.088c-5.587 0-10.118-2.726-10.118-6.088c0-3.361 4.531-6.087 10.118-6.087c5.588 0 10.118 2.726 10.118 6.087z"></path></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="知乎">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M5.721 0C2.251 0 0 2.25 0 5.719V18.28C0 21.751 2.252 24 5.721 24h12.56C21.751 24 24 21.75 24 18.281V5.72C24 2.249 21.75 0 18.281 0zm1.5 4.375l8.563.844c.25.031.781.125.781 1l-.031 2.375c0 .094-.125.531-.508.531h-7.75c-.125 0-.188.094-.188.157v.843c0 .094.063.157.188.157h6.438c.469 0 .719 1.25.75 1.594c.031.219.031.344.031.406c0 .469-.219 2.906-.656 3.688c-.094.25-.25.312-.438.312h-6.719c-.75.031-.156.062-.156.156v4.438c0 .094.031.125.156.125h8.344c.094 0 .188-.31.188-.125v-.875c0-.062-.094-.125-.188-.125h-1.25c.344-.5.531-1.094.563-1.75h1.687c.094 0 .125-.94.125-.188v-.75c0-.062-.031-.156-.125-.156h-1.75c0-.781-.25-1.407-.594-1.938h1.344c.094 0 .188-.62.188-.156v-.781c0-.125-.094-.156-.188-.156h-7.5c-.094 0-.156.031-.156.156v.781c0 .094.063.156.156.156h1.75c-.531.531-.75 1.156-.781 1.938h-1.781c-.125 0-.188.094-.188.156v.75c0 .094.063.188.188.188h1.594c-.032.656-.282 1.25-.626 1.75H9.501c-.094 0-.156.063-.156.125v.875c0 .094.063.125.156.125c-.25 0 1.688.031 2.063 0c-.344.562-.875.719-1.25.75c-.625.032-1.25-.187-1.563-.593a.36.36 0 0 0-.281-.126c-.344 0-.656.22-.656.532c0 .343.375.78.781 1.093c.438.376 1.625.688 2.563.625c1.25-.062 2.625-.593 3.25-2.281h.437c.438 0 .688-.187.75-.187c.219 0 2.094 1.875 3.344 1.875c.156 0 .375-.03.375-.187c0-.094-.031-.157-.031-.219c-.094-.25-1.344-1.844-2.906-2.344c-.25-.156-.313-.25-.219-.406c.438-.657.688-1.407.688-1.407s.156-.25.188-.312c.406-.5.75-1.844.75-2.78c0-.807-.157-1.407-.157-1.407s0-.125-.031-.188c-.031-.062-.469-.843-.469-.843s-.344-.97-1.25-.876h-3.531c-.031 0-.094-.031-.094-.125v-.656c0-.063.063-.125.094-.125h4c.094 0 .125-.063.125-.157v-.812c0-.094-.031-.157-.125-.157h-4c-.031 0-.094-.062-.094-.125v-.719c0-.062.063-.094.094-.125h4.188c.094 0 .188-.094.188-.156v-.688c0-.062-.094-.156-.188-.156zM7.345 8.25c.313 0 .438.219.563.438c.094.218.094.468.094.75c0 .53-.032.874-.157 1.124c-.31.157-.125.188-.187.188h-.688c-.125 0-.25-.094-.25-.25V8.5c0-.125.125-.25.25-.25zm7.437 0c.125 0 .25.125.25.25v2c0 .156-.125.25-.25.25h-.718c-.063 0-.157-.031-.188-.188c-.125-.25-.157-.593-.157-1.124c0-.282 0-.532.094-.75c.126-.219.25-.438.563-.438z"></path></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="抖音">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.59-1.16-2.59-2.5c0-1.4 1.16-2.5 2.59-2.5c.18 0 .36.02.53.06v-3.1a5.69 5.69 0 0 0-3.12.92a5.342 5.342 0 0 0-2.31 4.62c0 2.97 2.4 5.37 5.41 5.37c2.98 0 5.4-2.41 5.4-5.38V9.14a8.03 8.03 0 0 0 4.86 1.63v-3.06c-.9.01-1.75-.18-2.54-.52c-.71-.32-1.39-.7-2-1.16c-.6-.46-1.15-.97-1.65-1.53c-.2-.23.61.83.61.83z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-wrapper">
+                    <div class="footer-column">
+                        <h4>探索</h4>
+                        <ul>
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="life.html">生活</a></li>
+                            <li><a href="work.html">工作</a></li>
+                            <li><a href="you.html">你</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>生活板块</h4>
+                        <ul>
+                            <li><a href="life.html#movies">电影推荐</a></li>
+                            <li><a href="life.html#travel">旅行计划</a></li>
+                            <li><a href="life.html#tools">工具推荐</a></li>
+                            <li><a href="life.html#hobby">三分钟热度</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>工作板块</h4>
+                        <ul>
+                            <li><a href="work.html#tech">技术分享</a></li>
+                            <li><a href="work.html#comments">留言讨论</a></li>
+                            <li><a href="work.html#resources">学习资源</a></li>
+                            <li><a href="work.html#projects">项目展示</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 极简博客. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // 分类标签切换效果
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.category-tab');
+            const sections = document.querySelectorAll('.content-section');
+            
+            // 强制显示所有内容区域
+            document.querySelectorAll('.fade-in').forEach(element => {
+                element.classList.add('visible');
+            });
+            
+            // 初始化激活状态
+            const hash = window.location.hash || '#movies';
+            activateTab(hash);
+            
+            // 点击标签切换
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    activateTab(targetId);
+                    
+                    // 更新URL，但不刷新页面
+                    history.pushState(null, null, targetId);
+                });
+            });
+            
+            // 处理浏览器前进后退
+            window.addEventListener('popstate', function() {
+                const hash = window.location.hash || '#movies';
+                activateTab(hash);
+            });
+            
+            // 激活标签和内容
+            function activateTab(targetId) {
+                // 移除所有激活状态
+                tabs.forEach(tab => tab.classList.remove('active'));
+                
+                // 激活当前标签
+                const activeTab = document.querySelector(`.category-tab[href="${targetId}"]`);
+                if (activeTab) {
+                    activeTab.classList.add('active');
+                    
+                    // 平滑滚动到对应区域
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            }
+            
+            // 监听滚动，更新激活标签
+            window.addEventListener('scroll', function() {
+                const scrollPosition = window.scrollY + 200;
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        const id = '#' + section.getAttribute('id');
+                        tabs.forEach(tab => {
+                            if (tab.getAttribute('href') === id) {
+                                tab.classList.add('active');
+                            } else {
+                                tab.classList.remove('active');
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

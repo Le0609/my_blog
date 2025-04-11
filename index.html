@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极简博客 | 首页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">极简博客</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="life.html">生活</a></li>
+                <li><a href="work.html">工作</a></li>
+                <li><a href="you.html">你</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>探索思想的<br>无限可能</h1>
+                <p>分享创意、知识与见解的个人空间</p>
+                <div class="hero-actions">
+                    <a href="life.html" class="btn">探索生活</a>
+                    <a href="work.html" class="btn btn-outline">技术分享</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="featured-posts">
+            <div class="container">
+                <h2>精选内容</h2>
+                <p class="subtitle">探索我们精选的内容，从设计到技术，发现新的视角和实用技巧</p>
+                <div class="posts-grid">
+                    <article class="post-card">
+                        <div class="post-image" style="background-image: url('images/post1.jpg');"></div>
+                        <div class="post-content">
+                            <span class="post-category">设计</span>
+                            <h3>极简主义设计的力量</h3>
+                            <p>探索如何通过减法设计创造更有影响力的用户体验，让简约成为最强大的表达。</p>
+                            <a href="article1.html" class="read-more">阅读全文</a>
+                        </div>
+                    </article>
+                    <article class="post-card">
+                        <div class="post-image" style="background-image: url('images/post2.jpg');"></div>
+                        <div class="post-content">
+                            <span class="post-category">技术</span>
+                            <h3>现代Web开发趋势</h3>
+                            <p>从响应式设计到渐进式Web应用，了解塑造未来网络体验的关键技术。</p>
+                            <a href="article2.html" class="read-more">阅读全文</a>
+                        </div>
+                    </article>
+                    <article class="post-card">
+                        <div class="post-image" style="background-image: url('images/post3.jpg');"></div>
+                        <div class="post-content">
+                            <span class="post-category">思考</span>
+                            <h3>数字时代的专注力</h3>
+                            <p>在信息过载的世界中，如何培养深度工作能力并保持创造力。</p>
+                            <a href="article3.html" class="read-more">阅读全文</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="newsletter">
+            <div class="container">
+                <h2>订阅更新</h2>
+                <p>获取最新文章和思考，直接发送到您的收件箱</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="您的电子邮箱" required>
+                    <button type="submit" class="btn">订阅</button>
+                </form>
+                <p class="newsletter-notice">我们尊重您的隐私，不会分享您的个人信息</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-primary">
+                    <div class="footer-logo">极简博客</div>
+                    <p class="footer-description">探索思想的无限可能，分享创意、知识与见解的个人空间。</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="微博">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M20.194 14.197c0 3.362-4.53 6.088-10.118 6.088c-5.587 0-10.118-2.726-10.118-6.088c0-3.361 4.531-6.087 10.118-6.087c5.588 0 10.118 2.726 10.118 6.087z"></path></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="知乎">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M5.721 0C2.251 0 0 2.25 0 5.719V18.28C0 21.751 2.252 24 5.721 24h12.56C21.751 24 24 21.75 24 18.281V5.72C24 2.249 21.75 0 18.281 0zm1.5 4.375l8.563.844c.25.031.781.125.781 1l-.031 2.375c0 .094-.125.531-.508.531h-7.75c-.125 0-.188.094-.188.157v.843c0 .094.063.157.188.157h6.438c.469 0 .719 1.25.75 1.594c.031.219.031.344.031.406c0 .469-.219 2.906-.656 3.688c-.094.25-.25.312-.438.312h-6.719c-.75.031-.156.062-.156.156v4.438c0 .094.031.125.156.125h8.344c.094 0 .188-.31.188-.125v-.875c0-.062-.094-.125-.188-.125h-1.25c.344-.5.531-1.094.563-1.75h1.687c.094 0 .125-.94.125-.188v-.75c0-.062-.031-.156-.125-.156h-1.75c0-.781-.25-1.407-.594-1.938h1.344c.094 0 .188-.62.188-.156v-.781c0-.125-.094-.156-.188-.156h-7.5c-.094 0-.156.031-.156.156v.781c0 .094.063.156.156.156h1.75c-.531.531-.75 1.156-.781 1.938h-1.781c-.125 0-.188.094-.188.156v.75c0 .094.063.188.188.188h1.594c-.032.656-.282 1.25-.626 1.75H9.501c-.094 0-.156.063-.156.125v.875c0 .094.063.125.156.125c-.25 0 1.688.031 2.063 0c-.344.562-.875.719-1.25.75c-.625.032-1.25-.187-1.563-.593a.36.36 0 0 0-.281-.126c-.344 0-.656.22-.656.532c0 .343.375.78.781 1.093c.438.376 1.625.688 2.563.625c1.25-.062 2.625-.593 3.25-2.281h.437c.438 0 .688-.187.75-.187c.219 0 2.094 1.875 3.344 1.875c.156 0 .375-.03.375-.187c0-.094-.031-.157-.031-.219c-.094-.25-1.344-1.844-2.906-2.344c-.25-.156-.313-.25-.219-.406c.438-.657.688-1.407.688-1.407s.156-.25.188-.312c.406-.5.75-1.844.75-2.78c0-.807-.157-1.407-.157-1.407s0-.125-.031-.188c-.031-.062-.469-.843-.469-.843s-.344-.97-1.25-.876h-3.531c-.031 0-.094-.031-.094-.125v-.656c0-.063.063-.125.094-.125h4c.094 0 .125-.063.125-.157v-.812c0-.094-.031-.157-.125-.157h-4c-.031 0-.094-.062-.094-.125v-.719c0-.062.063-.094.094-.125h4.188c.094 0 .188-.094.188-.156v-.688c0-.062-.094-.156-.188-.156zM7.345 8.25c.313 0 .438.219.563.438c.094.218.094.468.094.75c0 .53-.032.874-.157 1.124c-.31.157-.125.188-.187.188h-.688c-.125 0-.25-.094-.25-.25V8.5c0-.125.125-.25.25-.25zm7.437 0c.125 0 .25.125.25.25v2c0 .156-.125.25-.25.25h-.718c-.063 0-.157-.031-.188-.188c-.125-.25-.157-.593-.157-1.124c0-.282 0-.532.094-.75c.126-.219.25-.438.563-.438z"></path></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="抖音">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.59-1.16-2.59-2.5c0-1.4 1.16-2.5 2.59-2.5c.18 0 .36.02.53.06v-3.1a5.69 5.69 0 0 0-3.12.92a5.342 5.342 0 0 0-2.31 4.62c0 2.97 2.4 5.37 5.41 5.37c2.98 0 5.4-2.41 5.4-5.38V9.14a8.03 8.03 0 0 0 4.86 1.63v-3.06c-.9.01-1.75-.18-2.54-.52c-.71-.32-1.39-.7-2-1.16c-.6-.46-1.15-.97-1.65-1.53c-.2-.23.61.83.61.83z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-wrapper">
+                    <div class="footer-column">
+                        <h4>探索</h4>
+                        <ul>
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="life.html">生活</a></li>
+                            <li><a href="work.html">工作</a></li>
+                            <li><a href="you.html">你</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>生活板块</h4>
+                        <ul>
+                            <li><a href="life.html#movies">电影推荐</a></li>
+                            <li><a href="life.html#travel">旅行计划</a></li>
+                            <li><a href="life.html#tools">工具推荐</a></li>
+                            <li><a href="life.html#hobby">三分钟热度</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>工作板块</h4>
+                        <ul>
+                            <li><a href="work.html#tech">技术分享</a></li>
+                            <li><a href="work.html#comments">留言讨论</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 极简博客. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

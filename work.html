@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极简博客 | 工作</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">极简博客</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="life.html">生活</a></li>
+                <li><a href="work.html" class="active">工作</a></li>
+                <li><a href="you.html">你</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-header">
+            <div class="container">
+                <h1>工作与技术</h1>
+                <p>分享技术心得，探讨行业前沿</p>
+            </div>
+        </section>
+
+        <div class="category-tabs">
+            <a href="#tech" class="category-tab active">技术分享</a>
+            <a href="#comments" class="category-tab">留言讨论</a>
+        </div>
+
+        <!-- 技术分享区域 -->
+        <section id="tech" class="content-section">
+            <div class="container">
+                <h2 class="section-title">技术分享</h2>
+                <div class="tech-grid">
+                    <!-- 技术文章卡片 1 -->
+                    <div class="tech-card fade-in">
+                        <div class="tech-image" style="background-color: #f1f7ff;">
+                            <span style="font-size: 4rem;">🧠</span>
+                        </div>
+                        <div class="tech-content">
+                            <span class="tech-tag">人工智能</span>
+                            <h3 class="tech-title">AlphaCode 2: 用大型语言模型解决竞赛编程问题</h3>
+                            <p class="tech-description">这项研究介绍了AlphaCode 2，这是一种基于大型语言模型的增强系统，用于解决竞争性编程问题。它在编程比赛中表现优异，能够解决各种复杂算法问题。</p>
+                            <a href="https://arxiv.org/html/2401.10446v1" target="_blank" class="read-more tech-link">阅读论文</a>
+                        </div>
+                    </div>
+                    
+                    <!-- 技术文章卡片 2 -->
+                    <div class="tech-card fade-in">
+                        <div class="tech-image" style="background-color: #f5f5ff;">
+                            <span style="font-size: 4rem;">🔍</span>
+                        </div>
+                        <div class="tech-content">
+                            <span class="tech-tag">机器学习</span>
+                            <h3 class="tech-title">METAGPT: 元学习引导的预训练和多任务微调</h3>
+                            <p class="tech-description">研究展示了METAGPT，一种创新的预训练和微调方法，利用元学习技术提高模型在多种任务上的性能。该方法在自然语言处理和计算机视觉任务上都取得了显著成果。</p>
+                            <a href="https://arxiv.org/html/2302.07730v4" target="_blank" class="read-more tech-link">阅读论文</a>
+                        </div>
+                    </div>
+                    
+                    <!-- 技术文章卡片 3 -->
+                    <div class="tech-card fade-in">
+                        <div class="tech-image" style="background-color: #f8f8f8;">
+                            <span style="font-size: 4rem;">📊</span>
+                        </div>
+                        <div class="tech-content">
+                            <span class="tech-tag">数据分析</span>
+                            <h3 class="tech-title">长上下文模型思维链的适应性演化</h3>
+                            <p class="tech-description">本研究探讨了大型语言模型在处理长上下文任务时思维链的演化过程。研究表明模型能够根据任务复杂度和上下文长度动态调整推理策略，提高解题效率。</p>
+                            <a href="https://arxiv.org/html/2408.05749v1" target="_blank" class="read-more tech-link">阅读论文</a>
+                        </div>
+                    </div>
+                    
+                    <!-- 技术文章卡片 4 -->
+                    <div class="tech-card fade-in">
+                        <div class="tech-image" style="background-color: #f5fff5;">
+                            <span style="font-size: 4rem;">🌐</span>
+                        </div>
+                        <div class="tech-content">
+                            <span class="tech-tag">前沿技术</span>
+                            <h3 class="tech-title">视觉大型语言模型的先验知识与挑战</h3>
+                            <p class="tech-description">这篇论文深入探讨了视觉大型语言模型(VLLM)的知识表示与推理能力，分析了这些模型如何整合视觉和语言信息，以及在复杂任务中面临的主要挑战。</p>
+                            <a href="https://arxiv.org/pdf/2501.06562" target="_blank" class="read-more tech-link">阅读论文</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 留言讨论区域 -->
+        <section id="comments" class="content-section">
+            <div class="container">
+                <h2 class="section-title">留言讨论</h2>
+                <div class="comments-section">
+                    <!-- 发表评论表单 -->
+                    <div class="comment-form">
+                        <h3 style="margin-bottom: 2.4rem; font-size: 2.4rem;">分享您的想法</h3>
+                        <form id="commentForm">
+                            <div class="form-group">
+                                <label for="name">您的名字</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">电子邮箱</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="topic">讨论主题</label>
+                                <input type="text" id="topic" name="topic" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">留言内容</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <div class="form-submit">
+                                <button type="submit" class="btn">发表留言</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- 评论列表 -->
+                    <div class="comment-list">
+                        <!-- 评论1 -->
+                        <div class="comment fade-in">
+                            <div class="comment-header">
+                                <div class="comment-avatar">ZL</div>
+                                <div class="comment-info">
+                                    <h4>张磊</h4>
+                                    <span class="comment-date">2024年4月2日</span>
+                                </div>
+                            </div>
+                            <div class="comment-body">
+                                <p>最近正在研究大型语言模型的应用场景，AlphaCode 2的论文给了我很多启发。我觉得在代码自动生成领域，LLM的表现已经超出了很多人的预期，特别是在算法竞赛这样需要深度思考的任务上。不知道有没有其他人也在这个方向上做研究？</p>
+                            </div>
+                        </div>
+                        
+                        <!-- 评论2 -->
+                        <div class="comment fade-in">
+                            <div class="comment-header">
+                                <div class="comment-avatar">WY</div>
+                                <div class="comment-info">
+                                    <h4>王岩</h4>
+                                    <span class="comment-date">2024年3月28日</span>
+                                </div>
+                            </div>
+                            <div class="comment-body">
+                                <p>我在团队中推广了基于GPT的开发辅助工具，确实大大提高了生产力。但同时也发现了一些问题，比如在处理特定领域的代码时，模型的输出需要更多的人工校验。希望未来能看到更多针对垂直领域优化的模型。你们有没有类似的经验可以分享？</p>
+                            </div>
+                        </div>
+                        
+                        <!-- 评论3 -->
+                        <div class="comment fade-in">
+                            <div class="comment-header">
+                                <div class="comment-avatar">LM</div>
+                                <div class="comment-info">
+                                    <h4>李明</h4>
+                                    <span class="comment-date">2024年3月25日</span>
+                                </div>
+                            </div>
+                            <div class="comment-body">
+                                <p>关于视觉语言模型的研究非常有前景，尤其是在多模态理解方面。我最近在做一个结合计算机视觉和NLP的项目，发现模型在处理复杂场景时仍然有很大的提升空间。有谁知道业界最新的VLLM benchmark吗？希望能交流一下经验。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <h2>订阅技术更新</h2>
+                <p>获取最新技术分享和行业动态，直接发送到您的收件箱</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="您的电子邮箱" required>
+                    <button type="submit" class="btn">订阅</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-primary">
+                    <div class="footer-logo">极简博客</div>
+                    <p class="footer-description">探索思想的无限可能，分享创意、知识与见解的个人空间。</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="微博">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M20.194 14.197c0 3.362-4.53 6.088-10.118 6.088c-5.587 0-10.118-2.726-10.118-6.088c0-3.361 4.531-6.087 10.118-6.087c5.588 0 10.118 2.726 10.118 6.087z"></path></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="知乎">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M5.721 0C2.251 0 0 2.25 0 5.719V18.28C0 21.751 2.252 24 5.721 24h12.56C21.751 24 24 21.75 24 18.281V5.72C24 2.249 21.75 0 18.281 0zm1.5 4.375l8.563.844c.25.031.781.125.781 1l-.031 2.375c0 .094-.125.531-.508.531h-7.75c-.125 0-.188.094-.188.157v.843c0 .094.063.157.188.157h6.438c.469 0 .719 1.25.75 1.594c.031.219.031.344.031.406c0 .469-.219 2.906-.656 3.688c-.094.25-.25.312-.438.312h-6.719c-.75.031-.156.062-.156.156v4.438c0 .094.031.125.156.125h8.344c.094 0 .188-.31.188-.125v-.875c0-.062-.094-.125-.188-.125h-1.25c.344-.5.531-1.094.563-1.75h1.687c.094 0 .125-.94.125-.188v-.75c0-.062-.031-.156-.125-.156h-1.75c0-.781-.25-1.407-.594-1.938h1.344c.094 0 .188-.62.188-.156v-.781c0-.125-.094-.156-.188-.156h-7.5c-.094 0-.156.031-.156.156v.781c0 .094.063.156.156.156h1.75c-.531.531-.75 1.156-.781 1.938h-1.781c-.125 0-.188.094-.188.156v.75c0 .094.063.188.188.188h1.594c-.032.656-.282 1.25-.626 1.75H9.501c-.094 0-.156.063-.156.125v.875c0 .094.063.125.156.125c-.25 0 1.688.031 2.063 0c-.344.562-.875.719-1.25.75c-.625.032-1.25-.187-1.563-.593a.36.36 0 0 0-.281-.126c-.344 0-.656.22-.656.532c0 .343.375.78.781 1.093c.438.376 1.625.688 2.563.625c1.25-.062 2.625-.593 3.25-2.281h.437c.438 0 .688-.187.75-.187c.219 0 2.094 1.875 3.344 1.875c.156 0 .375-.03.375-.187c0-.094-.031-.157-.031-.219c-.094-.25-1.344-1.844-2.906-2.344c-.25-.156-.313-.25-.219-.406c.438-.657.688-1.407.688-1.407s.156-.25.188-.312c.406-.5.75-1.844.75-2.78c0-.807-.157-1.407-.157-1.407s0-.125-.031-.188c-.031-.062-.469-.843-.469-.843s-.344-.97-1.25-.876h-3.531c-.031 0-.094-.031-.094-.125v-.656c0-.063.063-.125.094-.125h4c.094 0 .125-.063.125-.157v-.812c0-.094-.031-.157-.125-.157h-4c-.031 0-.094-.062-.094-.125v-.719c0-.062.063-.094.094-.125h4.188c.094 0 .188-.094.188-.156v-.688c0-.062-.094-.156-.188-.156zM7.345 8.25c.313 0 .438.219.563.438c.094.218.094.468.094.75c0 .53-.032.874-.157 1.124c-.31.157-.125.188-.187.188h-.688c-.125 0-.25-.094-.25-.25V8.5c0-.125.125-.25.25-.25zm7.437 0c.125 0 .25.125.25.25v2c0 .156-.125.25-.25.25h-.718c-.063 0-.157-.031-.188-.188c-.125-.25-.157-.593-.157-1.124c0-.282 0-.532.094-.75c.126-.219.25-.438.563-.438z"></path></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="抖音">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.59-1.16-2.59-2.5c0-1.4 1.16-2.5 2.59-2.5c.18 0 .36.02.53.06v-3.1a5.69 5.69 0 0 0-3.12.92a5.342 5.342 0 0 0-2.31 4.62c0 2.97 2.4 5.37 5.41 5.37c2.98 0 5.4-2.41 5.4-5.38V9.14a8.03 8.03 0 0 0 4.86 1.63v-3.06c-.9.01-1.75-.18-2.54-.52c-.71-.32-1.39-.7-2-1.16c-.6-.46-1.15-.97-1.65-1.53c-.2-.23.61.83.61.83z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-wrapper">
+                    <div class="footer-column">
+                        <h4>探索</h4>
+                        <ul>
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="life.html">生活</a></li>
+                            <li><a href="work.html">工作</a></li>
+                            <li><a href="you.html">你</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>生活板块</h4>
+                        <ul>
+                            <li><a href="life.html#movies">电影推荐</a></li>
+                            <li><a href="life.html#travel">旅行计划</a></li>
+                            <li><a href="life.html#tools">工具推荐</a></li>
+                            <li><a href="life.html#hobby">三分钟热度</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>工作板块</h4>
+                        <ul>
+                            <li><a href="work.html#tech">技术分享</a></li>
+                            <li><a href="work.html#comments">留言讨论</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 极简博客. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // 分类标签切换效果
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.category-tab');
+            const sections = document.querySelectorAll('.content-section');
+            
+            // 初始化激活状态
+            const hash = window.location.hash || '#tech';
+            activateTab(hash);
+            
+            // 点击标签切换
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    activateTab(targetId);
+                    
+                    // 更新URL，但不刷新页面
+                    history.pushState(null, null, targetId);
+                });
+            });
+            
+            // 处理浏览器前进后退
+            window.addEventListener('popstate', function() {
+                const hash = window.location.hash || '#tech';
+                activateTab(hash);
+            });
+            
+            // 激活标签和内容
+            function activateTab(targetId) {
+                // 移除所有激活状态
+                tabs.forEach(tab => tab.classList.remove('active'));
+                
+                // 激活当前标签
+                const activeTab = document.querySelector(`.category-tab[href="${targetId}"]`);
+                if (activeTab) {
+                    activeTab.classList.add('active');
+                    
+                    // 平滑滚动到对应区域
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            }
+            
+            // 评论提交处理
+            const commentForm = document.getElementById('commentForm');
+            if (commentForm) {
+                commentForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const name = document.getElementById('name').value;
+                    const topic = document.getElementById('topic').value;
+                    const message = document.getElementById('message').value;
+                    
+                    // 创建新评论元素
+                    const newComment = document.createElement('div');
+                    newComment.className = 'comment fade-in';
+                    newComment.innerHTML = `
+                        <div class="comment-header">
+                            <div class="comment-avatar">${name.substring(0, 2).toUpperCase()}</div>
+                            <div class="comment-info">
+                                <h4>${name}</h4>
+                                <span class="comment-date">${new Date().toLocaleDateString('zh-CN')}</span>
+                            </div>
+                        </div>
+                        <div class="comment-body">
+                            <p>${message}</p>
+                        </div>
+                    `;
+                    
+                    // 添加到评论列表
+                    const commentList = document.querySelector('.comment-list');
+                    commentList.prepend(newComment);
+                    
+                    // 重置表单
+                    commentForm.reset();
+                    
+                    // 显示成功消息
+                    const successMessage = document.createElement('div');
+                    successMessage.style.padding = '1.6rem';
+                    successMessage.style.backgroundColor = '#f0f9ff';
+                    successMessage.style.color = '#0071e3';
+                    successMessage.style.borderRadius = '0.8rem';
+                    successMessage.style.margin = '2rem 0';
+                    successMessage.style.textAlign = 'center';
+                    successMessage.innerText = '您的留言已发布！';
+                    
+                    commentForm.appendChild(successMessage);
+                    
+                    // 3秒后移除成功消息
+                    setTimeout(() => {
+                        successMessage.remove();
+                    }, 3000);
+                    
+                    // 确保新评论立即显示淡入效果
+                    setTimeout(() => {
+                        newComment.classList.add('visible');
+                    }, 10);
+                });
+            }
+        });
+    </script>
+</body>
+</html> 
