@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>极简博客 | 首页</title>
+    <title>Le'blog | 首页</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap">
     <meta name="theme-color" content="#ffffff">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="https://gitee.com/api/v5/repos/doocs/leetcode/contents/images/leetcode-logo.png?ref=main">
+    <link rel="icon" type="image/png" href="https://gitee.com/static/images/logo-black.svg?t=158106664">
+    
+    <!-- 预加载首屏关键图片 -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">极简博客</div>
+            <div class="logo">Le'blog</div>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">首页</a></li>
                 <li><a href="life.html">生活</a></li>
@@ -29,13 +33,14 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container">
-                <h1>探索思想的<br>无限可能</h1>
-                <p>分享创意、知识与见解的个人空间</p>
-                <div class="hero-actions">
-                    <a href="life.html" class="btn">探索生活</a>
-                    <a href="work.html" class="btn btn-outline">技术分享</a>
+        <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-position: center; padding: 140px 0 100px; position: relative;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+            <div class="container" style="position: relative; z-index: 2; text-align: center; max-width: 800px; margin: 0 auto;">
+                <h1 style="font-size: 56px; font-weight: 600; margin-bottom: 20px; color: #ffffff; line-height: 1.2;">探索思想的<br>无限可能</h1>
+                <p style="font-size: 24px; font-weight: 400; color: #f5f5f7; margin-bottom: 40px;">分享创意、知识与见解的个人空间</p>
+                <div class="hero-actions" style="display: flex; justify-content: center; gap: 20px;">
+                    <!-- <a href="life.html" class="btn" style="background-color: #0071e3; color: white; padding: 12px 24px; border-radius: 980px; font-size: 16px; font-weight: 500; text-decoration: none; transition: all 0.3s ease;">探索生活</a> -->
+                    <!-- <a href="work.html" class="btn btn-outline" style="background-color: transparent; color: #ffffff; padding: 12px 24px; border-radius: 980px; font-size: 16px; font-weight: 500; text-decoration: none; border: 1px solid #ffffff; transition: all 0.3s ease;">技术分享</a> -->
                 </div>
             </div>
         </section>
@@ -45,33 +50,42 @@
         <section class="featured-posts">
             <div class="container">
                 <h2>精选内容</h2>
-                <p class="subtitle">探索我们精选的内容，从设计到技术，发现新的视角和实用技巧</p>
+                <p class="subtitle">探索深度思考和当代人类面临的挑战，发现新的视角和思考方向</p>
                 <div class="posts-grid">
                     <article class="post-card">
-                        <div class="post-image" style="background-image: url('images/post1.jpg');"></div>
+                        <!-- 使用 Unsplash 图片源 -->
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop" alt="技术时代的人类异化" loading="lazy">
+                        </div>
                         <div class="post-content">
-                            <span class="post-category">设计</span>
-                            <h3>极简主义设计的力量</h3>
-                            <p>探索如何通过减法设计创造更有影响力的用户体验，让简约成为最强大的表达。</p>
-                            <a href="article1.html" class="read-more">阅读全文</a>
+                            <span class="post-category">哲学</span>
+                            <h3>技术时代的人类异化</h3>
+                            <p>探讨现代科技如何重塑人类关系和自我认知，以及我们如何在数字世界中重新寻找意义和价值。</p>
+                            <a href="https://plato.stanford.edu/entries/marx/#AlieHumaNatuCapi" target="_blank" class="read-more">阅读全文</a>
                         </div>
                     </article>
                     <article class="post-card">
-                        <div class="post-image" style="background-image: url('images/post2.jpg');"></div>
+                        <!-- 使用 Unsplash 图片源 -->
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1974&auto=format&fit=crop" alt="信息茧房与民主危机" loading="lazy">
+                        </div>
                         <div class="post-content">
-                            <span class="post-category">技术</span>
-                            <h3>现代Web开发趋势</h3>
-                            <p>从响应式设计到渐进式Web应用，了解塑造未来网络体验的关键技术。</p>
-                            <a href="article2.html" class="read-more">阅读全文</a>
+                            <span class="post-category">社会</span>
+                            <h3>信息茧房与民主危机</h3>
+                            <p>算法推荐和个性化信息流如何加剧社会分化，威胁共识形成，以及我们如何构建更健康的公共话语空间。</p>
+                            <a href="https://www.jstor.org/stable/j.ctv1phrpds" target="_blank" class="read-more">阅读全文</a>
                         </div>
                     </article>
                     <article class="post-card">
-                        <div class="post-image" style="background-image: url('images/post3.jpg');"></div>
+                        <!-- 使用 Unsplash 图片源 -->
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2070&auto=format&fit=crop" alt="后人类时代的生存伦理" loading="lazy">
+                        </div>
                         <div class="post-content">
-                            <span class="post-category">思考</span>
-                            <h3>数字时代的专注力</h3>
-                            <p>在信息过载的世界中，如何培养深度工作能力并保持创造力。</p>
-                            <a href="article3.html" class="read-more">阅读全文</a>
+                            <span class="post-category">生态</span>
+                            <h3>后人类时代的生存伦理</h3>
+                            <p>面对气候危机和人工智能挑战，我们需要重新思考人类文明的未来走向以及与自然、技术的关系重构。</p>
+                            <a href="https://www.nature.com/articles/s41599-020-0500-9" target="_blank" class="read-more">阅读全文</a>
                         </div>
                     </article>
                 </div>
@@ -80,15 +94,15 @@
 
         <div class="section-divider"></div>
 
-        <section class="newsletter">
-            <div class="container">
-                <h2>订阅更新</h2>
-                <p>获取最新文章和思考，直接发送到您的收件箱</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="您的电子邮箱" required>
-                    <button type="submit" class="btn">订阅</button>
+        <section class="newsletter" style="padding: 80px 0; background-color: #f5f5f7;">
+            <div class="container" style="max-width: 600px; margin: 0 auto;">
+                <h2 style="font-size: 36px; margin-bottom: 16px; text-align: center; color: #1d1d1f;">订阅更新</h2>
+                <p style="font-size: 18px; line-height: 1.5; margin-bottom: 32px; text-align: center; color: #86868b;">获取最新文章和思考，直接发送到您的收件箱</p>
+                <form class="newsletter-form" style="display: flex; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                    <input type="email" placeholder="您的电子邮箱" required style="flex: 1; padding: 16px; border: none; font-size: 16px; outline: none;">
+                    <button type="submit" class="btn" style="background-color: #0071e3; color: white; padding: 16px 24px; border: none; font-size: 16px; font-weight: 500; cursor: pointer; white-space: nowrap;">订阅</button>
                 </form>
-                <p class="newsletter-notice">我们尊重您的隐私，不会分享您的个人信息</p>
+                <p class="newsletter-notice" style="font-size: 14px; color: #86868b; text-align: center;">我们尊重您的隐私，不会分享您的个人信息</p>
             </div>
         </section>
     </main>
@@ -97,20 +111,20 @@
         <div class="container">
             <div class="footer-wrapper">
                 <div class="footer-primary">
-                    <div class="footer-logo">极简博客</div>
+                    <div class="footer-logo">Le'blog</div>
                     <p class="footer-description">探索思想的无限可能，分享创意、知识与见解的个人空间。</p>
                     <div class="social-icons">
-                        <a href="#" class="social-icon" aria-label="微博">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M20.194 14.197c0 3.362-4.53 6.088-10.118 6.088c-5.587 0-10.118-2.726-10.118-6.088c0-3.361 4.531-6.087 10.118-6.087c5.588 0 10.118 2.726 10.118 6.087z"></path></svg>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M21.543 7.104c.015.211.015.423.015.636 0 6.507-4.954 14.01-14.01 14.01v-.003A13.94 13.94 0 0 1 0 19.539a9.88 9.88 0 0 0 7.287-2.041 4.93 4.93 0 0 1-4.6-3.42 4.916 4.916 0 0 0 2.223-.084A4.926 4.926 0 0 1 .96 9.167v-.062a4.887 4.887 0 0 0 2.235.616A4.928 4.928 0 0 1 1.67 3.148a13.98 13.98 0 0 0 10.15 5.144 4.929 4.929 0 0 1 8.39-4.49 9.868 9.868 0 0 0 3.128-1.196 4.941 4.941 0 0 1-2.165 2.724A9.828 9.828 0 0 0 24 4.555a10.019 10.019 0 0 1-2.457 2.549z"/></svg>
                         </a>
-                        <a href="#" class="social-icon" aria-label="知乎">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M5.721 0C2.251 0 0 2.25 0 5.719V18.28C0 21.751 2.252 24 5.721 24h12.56C21.751 24 24 21.75 24 18.281V5.72C24 2.249 21.75 0 18.281 0zm1.5 4.375l8.563.844c.25.031.781.125.781 1l-.031 2.375c0 .094-.125.531-.508.531h-7.75c-.125 0-.188.094-.188.157v.843c0 .094.063.157.188.157h6.438c.469 0 .719 1.25.75 1.594c.031.219.031.344.031.406c0 .469-.219 2.906-.656 3.688c-.094.25-.25.312-.438.312h-6.719c-.75.031-.156.062-.156.156v4.438c0 .094.031.125.156.125h8.344c.094 0 .188-.31.188-.125v-.875c0-.062-.094-.125-.188-.125h-1.25c.344-.5.531-1.094.563-1.75h1.687c.094 0 .125-.94.125-.188v-.75c0-.062-.031-.156-.125-.156h-1.75c0-.781-.25-1.407-.594-1.938h1.344c.094 0 .188-.62.188-.156v-.781c0-.125-.094-.156-.188-.156h-7.5c-.094 0-.156.031-.156.156v.781c0 .094.063.156.156.156h1.75c-.531.531-.75 1.156-.781 1.938h-1.781c-.125 0-.188.094-.188.156v.75c0 .094.063.188.188.188h1.594c-.032.656-.282 1.25-.626 1.75H9.501c-.094 0-.156.063-.156.125v.875c0 .094.063.125.156.125c-.25 0 1.688.031 2.063 0c-.344.562-.875.719-1.25.75c-.625.032-1.25-.187-1.563-.593a.36.36 0 0 0-.281-.126c-.344 0-.656.22-.656.532c0 .343.375.78.781 1.093c.438.376 1.625.688 2.563.625c1.25-.062 2.625-.593 3.25-2.281h.437c.438 0 .688-.187.75-.187c.219 0 2.094 1.875 3.344 1.875c.156 0 .375-.03.375-.187c0-.094-.031-.157-.031-.219c-.094-.25-1.344-1.844-2.906-2.344c-.25-.156-.313-.25-.219-.406c.438-.657.688-1.407.688-1.407s.156-.25.188-.312c.406-.5.75-1.844.75-2.78c0-.807-.157-1.407-.157-1.407s0-.125-.031-.188c-.031-.062-.469-.843-.469-.843s-.344-.97-1.25-.876h-3.531c-.031 0-.094-.031-.094-.125v-.656c0-.063.063-.125.094-.125h4c.094 0 .125-.063.125-.157v-.812c0-.094-.031-.157-.125-.157h-4c-.031 0-.094-.062-.094-.125v-.719c0-.062.063-.094.094-.125h4.188c.094 0 .188-.094.188-.156v-.688c0-.062-.094-.156-.188-.156zM7.345 8.25c.313 0 .438.219.563.438c.094.218.094.468.094.75c0 .53-.032.874-.157 1.124c-.31.157-.125.188-.187.188h-.688c-.125 0-.25-.094-.25-.25V8.5c0-.125.125-.25.25-.25zm7.437 0c.125 0 .25.125.25.25v2c0 .156-.125.25-.25.25h-.718c-.063 0-.157-.031-.188-.188c-.125-.25-.157-.593-.157-1.124c0-.282 0-.532.094-.75c.126-.219.25-.438.563-.438z"></path></svg>
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                         </a>
                         <a href="#" class="social-icon" aria-label="GitHub">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
                         </a>
-                        <a href="#" class="social-icon" aria-label="抖音">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.59-1.16-2.59-2.5c0-1.4 1.16-2.5 2.59-2.5c.18 0 .36.02.53.06v-3.1a5.69 5.69 0 0 0-3.12.92a5.342 5.342 0 0 0-2.31 4.62c0 2.97 2.4 5.37 5.41 5.37c2.98 0 5.4-2.41 5.4-5.38V9.14a8.03 8.03 0 0 0 4.86 1.63v-3.06c-.9.01-1.75-.18-2.54-.52c-.71-.32-1.39-.7-2-1.16c-.6-.46-1.15-.97-1.65-1.53c-.2-.23.61.83.61.83z"></path></svg>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm7.846-10.405a1.441 1.441 0 11-2.883 0 1.441 1.441 0 012.883 0z"/></svg>
                         </a>
                     </div>
                 </div>
@@ -143,11 +157,26 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2024 极简博客. 保留所有权利.</p>
+                <p>&copy; 2025 Le'blog. 保留所有权利.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+        if ('loading' in HTMLImageElement.prototype) {
+            console.log('浏览器支持原生懒加载');
+        } else {
+            const script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js';
+            document.body.appendChild(script);
+            
+            document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+                img.classList.add('lazyload');
+                img.setAttribute('data-src', img.src);
+                img.src = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
+            });
+        }
+    </script>
 </body>
 </html>
